@@ -1,3 +1,13 @@
 from django.db import models
 
-# Create your models here.
+class Blogpost(models.Model):
+    title = models.CharField(max_length=255)
+    pub_date = models.DateTimeField()
+    body = models.TextField()
+    image = models.ImageField(upload_to='images/')
+
+# Add blog app to settings.
+
+# Create a migration
+
+# add to the admin
