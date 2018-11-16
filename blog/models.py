@@ -5,9 +5,3 @@ class Blogpost(models.Model):
     pub_date = models.DateTimeField()
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
-
-# Add blog app to settings.
-
-# Create a migration
-
-# add to the admin
