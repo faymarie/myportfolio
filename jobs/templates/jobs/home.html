@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+  {% load staticfiles %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="#">Twitter</a>
-          <a class="nav-item nav-link" href="#">Resume</a>
+          <a class="nav-item nav-link" href="{% static 'CV-english.pdf' %}">Resume</a>
           <a class="nav-item nav-link" href="#">Blog</a>
         </div>
       </div>
@@ -46,6 +46,7 @@
         <p>
           <a href="mailto:marie.klaus@code.berlin" class="btn btn-primary my-2">Email me<menu type="toolbar"></menu></a>
         </p>
+        <img src="{% static 'marie.jpg' %}" width="400">
       </div>
     </section>
 
