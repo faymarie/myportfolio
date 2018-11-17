@@ -6,6 +6,7 @@ class Blogpost(models.Model):
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
 
+    # to display info on django admin
     def __str__(self):
         return self.title
 
